@@ -60,18 +60,56 @@
   /* ---------- Watch-us cycler ---------- */
   const list = $("#watchList");
   if (list) {
-    const items = $$("li", list);
+    const items = $$("li:not(.arr)", list);
     const ind = $(".watch-indicator", list);
     let i = 0;
     const place = () => {
       items.forEach((li, j) => li.classList.toggle("is-active", j === i));
       ind.style.left = items[i].offsetLeft + "px";
       ind.style.width = items[i].offsetWidth + "px";
+      ind.style.top = items[i].offsetTop + "px";
+      ind.style.height = items[i].offsetHeight + "px";
     };
     place();
     addEventListener("resize", place);
     document.fonts && document.fonts.ready.then(place);
     if (!reduce) setInterval(() => { i = (i + 1) % items.length; place(); }, 1900);
+  }
+
+  /* ---------- Glass booklet: tilt, glare and loupe ---------- */
+  const booklet = $("#booklet");
+  if (booklet) {
+    const stage = $(".booklet-inner", booklet);
+    const img = $("img", stage);
+    const lens = $(".booklet-lens", stage);
+    const ZOOM = 2.6;
+    const move = (e) => {
+      const r = stage.getBoundingClientRect();
+      const x = e.clientX - r.left, y = e.clientY - r.top;
+      const px = x / r.width, py = y / r.height;
+      if (px < 0 || px > 1 || py < 0 || py > 1) return;
+      stage.style.setProperty("--mx", px * 100 + "%");
+      stage.style.setProperty("--my", py * 100 + "%");
+      if (!reduce && finePointer) {
+        booklet.classList.add("tilting");
+        stage.style.setProperty("--ry", (px - 0.5) * 10 + "deg");
+        stage.style.setProperty("--rx", (0.5 - py) * 8 + "deg");
+      }
+      lens.style.left = x + "px";
+      lens.style.top = y + "px";
+      lens.style.backgroundSize = img.clientWidth * ZOOM + "px " + img.clientHeight * ZOOM + "px";
+      lens.style.backgroundPosition = -(x * ZOOM - lens.offsetWidth / 2) + "px " + -(y * ZOOM - lens.offsetHeight / 2) + "px";
+      booklet.classList.add("lens-on");
+    };
+    const leave = () => {
+      booklet.classList.remove("lens-on", "tilting");
+      stage.style.setProperty("--rx", "0deg");
+      stage.style.setProperty("--ry", "0deg");
+    };
+    stage.addEventListener("pointermove", move);
+    stage.addEventListener("pointerdown", move);
+    stage.addEventListener("pointerleave", leave);
+    stage.addEventListener("pointercancel", leave);
   }
 
   /* ---------- 3D tilt (slabs, pass) ---------- */

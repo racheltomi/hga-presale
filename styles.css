@@ -312,7 +312,7 @@ p { margin: 0 0 1em; }
 .letter-open { font-family: var(--f-head); font-size: var(--fs-quote); line-height: 1.2; color: #fff !important; font-weight: 700; margin-bottom: 1.2em; }
 .letter-open span { color: var(--muted); font-weight: 600; }
 .big-word-wrap { overflow: hidden; padding: clamp(30px, 5vw, 60px) 0; }
-.big-word { position: relative; font-family: var(--f-head); font-weight: 900; font-size: calc(var(--fs-h1) * .9); line-height: .9; letter-spacing: -0.04em; text-align: center; white-space: nowrap; --fill: 0; }
+.big-word { position: relative; font-family: var(--f-head); font-weight: 900; font-size: clamp(44px, 10vw, 136px); line-height: .9; letter-spacing: -0.04em; text-align: center; white-space: nowrap; --fill: 0; }
 .bw-outline { color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.25); }
 .big-word::after {
   content: attr(data-text);

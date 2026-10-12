@@ -1094,3 +1094,51 @@ p { margin: 0 0 1em; }
   .stat, .stat:nth-child(3) { border-left: 0; padding: 22px 0; border-bottom: 1px solid var(--line); }
   .includes { font-size: 14.5px; padding: 14px 16px; }
 }
+
+/* =========================================================
+   CTA DE-CONFLICT + GLASS PROMINENCE
+   ========================================================= */
+/* Light, premium button reserved for Glass — distinct from the red main CTA */
+.btn-light { background: #ffffff; color: #0a0a0a; box-shadow: 0 0 0 1px rgba(247,212,136,.55), 0 14px 40px -12px rgba(247,212,136,.45); }
+.btn-light svg { color: var(--accent); }
+.btn-light:hover { transform: translateY(-2px); background: #f3efe6; box-shadow: 0 0 0 1px rgba(247,212,136,.8), 0 18px 50px -12px rgba(247,212,136,.6); }
+
+/* How-it-works step row: labels, not buttons */
+.flow { gap: 10px 18px; }
+.flow span { display: inline-flex; align-items: baseline; gap: 8px; padding: 6px 2px; border: 0; border-radius: 0; background: none; color: #fff; }
+.flow span small { font-size: 11px; color: var(--muted); letter-spacing: .1em; }
+.flow i { color: var(--muted); }
+.flow .flow-end { background: none; border: 0; color: var(--accent-2); box-shadow: inset 0 -2px 0 var(--accent); }
+.flow .flow-end small { color: var(--accent-2); }
+
+/* Hero "Watch us" highlight: frosted outline + thin red underline (not a red pill) */
+.watch-indicator { background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.22); }
+.watch-indicator::after { content: ""; position: absolute; left: 28%; right: 28%; bottom: 5px; height: 2px; border-radius: 2px; background: var(--accent); }
+.watch-list li.is-active { color: #fff; }
+
+/* Choice section: Glass is the featured card */
+.choice-grid { grid-template-columns: 1fr 1.12fr; align-items: stretch; }
+.choice-glass { border-color: transparent; box-shadow: 0 40px 120px -40px rgba(247,212,136,.35); }
+.choice-glass::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1.5px; pointer-events: none;
+  background: conic-gradient(from var(--ang, 0deg), rgba(247,212,136,.95), rgba(230,36,41,.75), rgba(255,255,255,.25), rgba(247,212,136,.95));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: angle 6s linear infinite;
+}
+.choice-glass .choice-media { position: relative; }
+.choice-glass .choice-media::before { content: ""; position: absolute; inset: 8% -10%; z-index: -1; border-radius: 50%; background: radial-gradient(circle, rgba(247,212,136,.28), transparent 65%); filter: blur(10px); }
+.choice-card .plan-ribbon { top: 20px; right: 20px; }
+
+/* Pricing: raise the Glass plan, calm the Poly glow */
+.plan-poly { border-color: rgba(230,36,41,.3); box-shadow: 0 30px 80px -50px rgba(230,36,41,.4); }
+.plan-glass { background: linear-gradient(160deg, rgba(247,212,136,.10), rgba(255,255,255,.03) 50%); box-shadow: 0 50px 140px -40px rgba(247,212,136,.35); }
+.plan-glass::before { padding: 1.5px; }
+.plan-glass .plan-kicker { color: var(--gold); }
+
+.plan.plan-glass.reveal.in { transform: translateY(-16px); }
+.plan-glass .plan-pic { position: relative; }
+.plan-glass .plan-pic::before { content: ""; position: absolute; inset: 0 18%; z-index: -1; border-radius: 50%; background: radial-gradient(circle, rgba(247,212,136,.28), transparent 65%); filter: blur(12px); }
+.plan-glass .plan-pic img { width: 52%; }
+.choice-card .btn { white-space: nowrap; padding-left: 26px; padding-right: 26px; }
+@media (max-width: 1100px) { .choice-grid { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .plan.plan-glass.reveal.in { transform: none; } }

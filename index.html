@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HGA Founder's Launch | Glass-Box Grading™</title>
+<meta name="description" content="The most transparent card grading experience. Lock in HGA Founder's pricing from $50 with a 15-business-day guaranteed delivery-to-reveal clock." />
+<meta name="theme-color" content="#0a0a0a" />
+<link rel="icon" href="assets/hga-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="m17 1 4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="m7 23-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-frame" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-nfc" viewBox="0 0 24 24"><path d="M6 8.32a7.43 7.43 0 0 1 0 7.36"/><path d="M9.46 6.21a11.76 11.76 0 0 1 0 11.58"/><path d="M12.91 4.1a15.91 15.91 0 0 1 .01 15.8"/><path d="M16.37 2a20.16 20.16 0 0 1 0 20"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M2 18h20l-2-11-5 5-3-7-3 7-5-5z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v9H5v-9"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+    <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="m3 9 1-5h16l1 5"/><path d="M4 9v11h16V9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M10 20v-5h4v5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6M2 9h20"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l4 2"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+    <symbol id="i-live" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.76-2-2-2H4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .01-1 1.03V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.76-2-2-2h-4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ TOP TICKER ============ -->
+<div class="ticker" aria-label="Founder's Launch highlights">
+  <div class="ticker-track">
+    <span><b>●</b> Founder's Launch is live</span><span>15-Business-Day Guaranteed Reveal</span><span>Founder's Pricing From $50</span><span>Free Subgrades</span><span>Autograph Grading Included</span><span>NFC Verification</span><span>No Card-Value Upcharge Through $10K</span>
+    <span aria-hidden="true"><b>●</b> Founder's Launch is live</span><span aria-hidden="true">15-Business-Day Guaranteed Reveal</span><span aria-hidden="true">Founder's Pricing From $50</span><span aria-hidden="true">Free Subgrades</span><span aria-hidden="true">Autograph Grading Included</span><span aria-hidden="true">NFC Verification</span><span aria-hidden="true">No Card-Value Upcharge Through $10K</span>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo" aria-label="HGA home"><img src="assets/hga-logo.png" alt="HGA — Hybrid Grading Approach" /></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#glass-box">Glass-Box Grading™</a>
+      <a href="#how">How It Works</a>
+      <a href="#features">What's Included</a>
+      <a href="#pricing">Founder's Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#pricing" class="btn btn-primary btn-sm">Claim Founder's Slot</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="grid-lines"></div>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="live-pill load-in" style="--d:0"><span class="live-dot"></span>Founder's Launch · Presale Now Open</div>
+    <p class="hero-eyebrow load-in" style="--d:1">Introducing</p>
+    <h1 class="hero-title">
+      <span class="line"><span class="load-up" style="--d:2">The Most <em class="shine-text">Transparent</em></span></span>
+      <span class="line"><span class="load-up" style="--d:3">Card Grading Experience</span></span>
+    </h1>
+    <p class="hero-sub load-in" style="--d:4">HGA's upgraded AI system lets you visually track your card's entire grading process — <strong>without guesswork or mystery.</strong></p>
+
+    <div class="hero-stage load-in" style="--d:5">
+      <!-- Floating slab: left -->
+      <div class="hero-slab hero-slab-l" data-parallax="-0.12">
+        <div class="slab slab-sm" data-tilt>
+          <div class="slab-label">
+            <img src="assets/hga-logo.png" alt="" class="slab-logo" />
+            <div class="slab-meta"><b>Charizard — Holo</b><span>1999 Pokémon Base Set #4</span></div>
+            <div class="slab-grade"><b>10</b><span>Gem Mint</span></div>
+          </div>
+          <div class="slab-window"><img src="assets/cards/charizard.jpg" alt="Placeholder: Charizard card in HGA slab" loading="eager" /></div>
+          <span class="slab-shine"></span>
+        </div>
+      </div>
+
+      <!-- DEMO VIDEO (placeholder) -->
+      <button class="video-frame" id="openVideo" aria-label="Play the HGA demo video">
+        <img src="assets/photos/grader-bench.jpg" alt="An HGA grader inspecting a card under a loupe at the grading bench" />
+        <span class="vf-shade"></span>
+        <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+        <span class="vf-scan"></span>
+        <span class="vf-chip vf-rec"><i></i>LIVE GRADING VIEW</span>
+        <span class="vf-chip vf-id">CERT #HGA-0001427 · CLOCK: DAY 06 / 15</span>
+        <span class="play-btn"><svg><use href="#i-play"/></svg></span>
+        <span class="vf-caption">Watch the demo <small>2:14</small></span>
+      </button>
+
+      <!-- Floating slab: right -->
+      <div class="hero-slab hero-slab-r" data-parallax="-0.2">
+        <div class="slab slab-sm" data-tilt>
+          <div class="slab-label">
+            <img src="assets/hga-logo.png" alt="" class="slab-logo" />
+            <div class="slab-meta"><b>Ty Cobb — Portrait</b><span>1909–11 T206 · Green</span></div>
+            <div class="slab-grade"><b>9.5</b><span>Mint+</span></div>
+          </div>
+          <div class="slab-window"><img src="assets/cards/cobb.jpg" alt="Placeholder: vintage T206 baseball card in HGA slab" /></div>
+          <span class="slab-shine"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="watch-us load-in" style="--d:6">
+      <span class="watch-label">Watch us:</span>
+      <ul class="watch-list" id="watchList">
+        <li class="is-active">Grade it</li><li>Verify it</li><li>Collect it</li><li>Trade it</li><li>Sell it</li>
+        <span class="watch-indicator" aria-hidden="true"></span>
+      </ul>
+    </div>
+
+    <div class="hero-cta load-in" style="--d:7">
+      <a href="#pricing" class="btn btn-primary btn-lg">Join The Founder's Launch Now <svg><use href="#i-arrow"/></svg></a>
+      <p class="cta-note"><span><svg><use href="#i-lock"/></svg> Founder's pricing from <b>$50</b></span><i class="sep">·</i><span>15-business-day guaranteed reveal</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. MANIFESTO ============ -->
+<section class="manifesto">
+  <div class="container">
+    <h2 class="scrub-text" data-scrub>Finally: A New System That Grades <span class="accent">In Plain Sight.</span></h2>
+  </div>
+</section>
+
+<!-- ============ 3. THE LETTER ============ -->
+<section class="letter">
+  <div class="container narrow">
+    <p class="letter-open reveal">Yeah… we know.<br/><span>HGA has been gone for a while.</span></p>
+    <p class="reveal">And you have every reason to be skeptical of our return.</p>
+    <p class="reveal">So we're not gonna come back after all this time and ask for your trust back — <strong class="hl">we're going to EARN it back.</strong></p>
+    <p class="reveal">And we believe the best way to do that is by giving you something this industry — and HGA — hasn't given collectors enough of:</p>
+  </div>
+  <div class="big-word-wrap">
+    <div class="big-word" data-fill aria-label="Transparency"><span class="bw-outline">TRANSPARENCY</span><span class="bw-fill" aria-hidden="true">TRANSPARENCY</span></div>
+  </div>
+  <div class="container narrow">
+    <p class="reveal">For far too long, collectors like you have had to send off their most valuable cards and simply <em>hope for the best.</em></p>
+    <p class="reveal">Meanwhile, you're met with hidden grading processes, uncertain turnaround times, and little explanation behind your final grade.</p>
+    <p class="leads-to reveal">Which leads to… <span class="down-arrow"><svg><use href="#i-arrow"/></svg></span></p>
+  </div>
+</section>
+
+<!-- ============ 4. THE PROBLEM: BLACK BOX ============ -->
+<section class="problem">
+  <div class="container">
+    <div class="problem-visuals">
+      <!-- [IMAGE] 1 — the old "tracking" experience -->
+      <div class="old-tracker reveal" aria-label="Illustration: a typical grading order status with no information">
+        <div class="ot-head"><span class="ot-dots"><i></i><i></i><i></i></span><span>order-status</span></div>
+        <div class="ot-body">
+          <div class="ot-row"><span>Order</span><b>#58219-B</b></div>
+          <div class="ot-row"><span>Status</span><b class="ot-glitch" data-text="IN GRADING">IN GRADING</b></div>
+          <div class="ot-row"><span>Grader</span><b class="ot-redact">██████████</b></div>
+          <div class="ot-row"><span>Est. return</span><b class="ot-redact">TBD</b></div>
+          <div class="ot-bar"><span></span></div>
+          <p class="ot-foot">Last update: 47 days ago</p>
+        </div>
+      </div>
+      <!-- [IMAGE] 2 — the abyss -->
+      <div class="abyss reveal" style="--d:1" aria-label="Illustration: a card disappearing into a black box">
+        <div class="abyss-hole"></div>
+        <img class="abyss-card" src="assets/cards/umbreon.jpg" alt="" />
+        <span class="abyss-q q1">?</span><span class="abyss-q q2">?</span><span class="abyss-q q3">?</span>
+      </div>
+    </div>
+
+    <div class="problem-head">
+      <p class="eyebrow eyebrow-bad reveal">The real problem</p>
+      <h2 class="h-xl reveal">"Black Box <span class="strike-bad">Grading.</span>"</h2>
+      <p class="lead reveal">What's Black Box Grading? You already know the experience:</p>
+      <p class="reveal">You send in your card, and wait in what feels like a <em>mysterious abyss.</em></p>
+    </div>
+
+    <p class="no-idea reveal">You have <b>NO</b> idea:</p>
+    <div class="unknowns">
+      <div class="unknown reveal" style="--d:0"><span class="u-q">?</span><span class="u-k">Who</span><p>is grading your card</p></div>
+      <div class="unknown reveal" style="--d:1"><span class="u-q">?</span><span class="u-k">Why</span><p>your card received its grade</p></div>
+      <div class="unknown reveal" style="--d:2"><span class="u-q">?</span><span class="u-k">When</span><p>you'll get your card back</p></div>
+    </div>
+
+    <figure class="closed-doors reveal">
+      <blockquote>"Just give us your most valuable cards and trust whatever happens behind closed doors."</blockquote>
+      <figcaption>…huh?</figcaption>
+    </figure>
+
+    <div class="container narrow problem-tail">
+      <p class="reveal">And this has been happening for <b>YEARS!</b></p>
+      <p class="reveal">We believe collectors deserve better.</p>
+      <p class="reveal">You shouldn't be asked for blind trust while being kept in the dark.</p>
+    </div>
+
+    <div class="proof-swap">
+      <p class="ps-line reveal">You don't need more <s>promises.</s></p>
+      <p class="ps-big reveal">You need more <span class="proof-word">PROOF.</span></p>
+      <p class="ps-q reveal">And what better way to give you proof — than to <b>SHOW YOU EVERYTHING?</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. THAT'S WHY + 4 BENEFITS ============ -->
+<section class="thats-why">
+  <div class="container">
+    <div class="tw-head">
+      <p class="eyebrow reveal">That's why…</p>
+      <h2 class="h-lg reveal">HGA <span class="muted-ink">(now powered by U-Collect)</span> lets you visually follow your card from <span class="accent">delivery to grade reveal…</span></h2>
+      <p class="lead reveal">So you can see what's happening, understand your grade, and know when it's due.</p>
+      <p class="tw-nos reveal"><span>No more waiting.</span><span>Wondering.</span><span>Or blind trust.</span></p>
+    </div>
+
+    <p class="sub-eyebrow reveal">Our new and improved grading system now lets you:</p>
+    <div class="benefit4">
+      <!-- [IMAGE] Know EXACTLY what you own -->
+      <article class="b4 reveal spot" style="--d:0">
+        <div class="b4-visual b4-own">
+          <img src="assets/cards/charizard-ex.jpg" alt="Placeholder card" />
+          <div class="b4-chip c-tl"><svg><use href="#i-check"/></svg> Authenticated</div>
+          <div class="b4-chip c-br mono">Charizard ex · SIR<br/><b>HGA 10</b></div>
+        </div>
+        <h3>Know <span class="accent">EXACTLY</span> what you own.</h3>
+      </article>
+      <!-- [IMAGE] Get back to selling faster -->
+      <article class="b4 reveal spot" style="--d:1">
+        <div class="b4-visual b4-sell">
+          <img src="assets/cards/russell.jpg" alt="Placeholder card" />
+          <div class="b4-sold">SOLD</div>
+          <div class="b4-chip c-tl mono">Graded → Listed → Sold</div>
+        </div>
+        <h3>Get back to selling <span class="accent">faster.</span></h3>
+      </article>
+      <!-- [IMAGE] Showcase -->
+      <article class="b4 reveal spot" style="--d:2">
+        <div class="b4-visual b4-show">
+          <div class="slab slab-xs">
+            <div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Black Lotus</b><span>Magic: The Gathering</span></div><div class="slab-grade"><b>9</b><span>Mint</span></div></div>
+            <div class="slab-window"><img src="assets/cards/lotus.jpg" alt="Placeholder card" /></div><span class="slab-shine"></span>
+          </div>
+          <div class="pedestal"></div>
+        </div>
+        <h3>Give your best cards the <span class="accent">showcase</span> they deserve.</h3>
+      </article>
+      <!-- [IMAGE] See the proof -->
+      <article class="b4 reveal spot" style="--d:3">
+        <div class="b4-visual b4-proof">
+          <div class="mini-report">
+            <p class="mr-title mono">GRADING REPORT</p>
+            <div class="mr-row"><span>Centering</span><i style="--w:95%"></i><b>9.5</b></div>
+            <div class="mr-row"><span>Corners</span><i style="--w:100%"></i><b>10</b></div>
+            <div class="mr-row"><span>Edges</span><i style="--w:90%"></i><b>9</b></div>
+            <div class="mr-row"><span>Surface</span><i style="--w:100%"></i><b>10</b></div>
+            <div class="mr-final"><span>Final</span><b>9.5</b></div>
+          </div>
+        </div>
+        <h3>And <span class="accent">FINALLY</span> see the proof for yourself.</h3>
+      </article>
+    </div>
+
+    <p class="tw-close reveal">No matter if you collect for fun, deal and resell, or are a legacy HGA customer… HGA now lets you <b>SEE</b> and follow your card's entire grading process… <span class="accent">so you're never left in mystery again.</span></p>
+  </div>
+</section>
+
+<!-- ============ 6. ENTER GLASS-BOX GRADING (scroll-driven) ============ -->
+<section class="glassbox" id="glass-box">
+  <div class="gb-sticky">
+    <div class="container gb-grid">
+      <div class="gb-copy">
+        <p class="eyebrow">Enter</p>
+        <h2 class="gb-title"><span class="gb-word"><span class="gb-old">Black</span><span class="gb-new">Glass</span></span>-Box Grading<sup>™</sup></h2>
+        <p class="gb-tagline">Card Grading — With Nothing To Hide</p>
+        <div class="gb-steps">
+          <p class="gb-step" data-at="0.2">Instead of sending your cards into a "black box" and hoping for the best, Glass-Box Grading™ helps you see every step of the way.</p>
+          <p class="gb-step" data-at="0.45">From card tracking, to strict grading deadlines, the reasoning behind your grade… and the chance to judge the proof for yourself.</p>
+          <p class="gb-step gb-strong" data-at="0.7">Because the new HGA isn't asking you to blindly trust the grader…</p>
+        </div>
+      </div>
+      <div class="gb-scene" aria-hidden="true">
+        <div class="cube-wrap">
+          <div class="cube">
+            <div class="face f-front"><span>?</span></div>
+            <div class="face f-back"><span>?</span></div>
+            <div class="face f-left"><span>?</span></div>
+            <div class="face f-right"><span>?</span></div>
+            <div class="face f-top"></div>
+            <div class="face f-bottom"></div>
+            <div class="cube-card"><img src="assets/cards/blue-eyes.jpg" alt="" /></div>
+          </div>
+          <div class="cube-shadow"></div>
+        </div>
+        <div class="gb-readout mono">
+          <span>OPACITY</span><b id="gbOpacity">100%</b>
+          <span>VISIBILITY</span><b id="gbVis">NONE</b>
+        </div>
+      </div>
+    </div>
+    <div class="gb-progress"><span></span></div>
+  </div>
+</section>
+
+<!-- ============ 7. LOOK OVER OUR SHOULDERS ============ -->
+<section class="shoulder">
+  <div class="container">
+    <h2 class="h-lg center reveal">We're Inviting You To Look Over Our Shoulders And <span class="accent">WATCH</span> The Grading Process</h2>
+    <!-- [IMAGE] -->
+    <div class="shoulder-media reveal">
+      <img src="assets/photos/lab-loupe.jpg" alt="A grader inspecting a card under a loupe" loading="lazy" />
+      <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+      <div class="hud-tag ht1"><i></i> CHECK-IN <b>✓</b></div>
+      <div class="hud-tag ht2"><i></i> AI SURFACE SCAN <b>98.2%</b></div>
+      <div class="hud-tag ht3"><i></i> SUBGRADES <b>LOGGED</b></div>
+      <div class="hud-scanline"></div>
+    </div>
+    <p class="center lead reveal">No more closed doors. <b>Everything out in the open:</b></p>
+  </div>
+</section>
+
+<!-- ============ 8. COMPARISON ============ -->
+<section class="compare">
+  <div class="container">
+    <div class="cmp">
+      <div class="cmp-col cmp-old reveal">
+        <header><span class="cmp-badge bad">The old grading system</span><h3>Black Box Grading</h3></header>
+        <ul>
+          <li><svg><use href="#i-x"/></svg>Card disappears after submission</li>
+          <li><svg><use href="#i-x"/></svg>Estimated turnaround</li>
+          <li><svg><use href="#i-x"/></svg>Final grade with limited explanation</li>
+          <li><svg><use href="#i-x"/></svg>Blind trust</li>
+          <li><svg><use href="#i-x"/></svg>Unclear grading process</li>
+        </ul>
+      </div>
+      <div class="cmp-vs" aria-hidden="true">VS</div>
+      <div class="cmp-col cmp-new reveal" style="--d:1">
+        <header><span class="cmp-badge good">The new grading standard</span><h3>Glass-Box Grading™</h3></header>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Follow your card through the process</li>
+          <li><svg><use href="#i-check"/></svg>Guaranteed reveal-to-delivery clock</li>
+          <li><svg><use href="#i-check"/></svg>Full grading report + subgrades</li>
+          <li><svg><use href="#i-check"/></svg>Visible proof</li>
+          <li><svg><use href="#i-check"/></svg>AI-assisted evaluation + grading details</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. CTA BAND ============ -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-card reveal">
+      <div class="cta-card-bg" aria-hidden="true"></div>
+      <div class="cta-card-copy">
+        <p class="eyebrow">Founder's Launch</p>
+        <h2 class="h-lg">Be One Of The First To Experience Glass-Box Grading™</h2>
+        <p class="cta-price-line">Grade your cards in <b>15 business days</b> — starting at just <span class="price-pop">$50</span> with Founder's pricing.</p>
+        <p class="muted">Get AI-assisted grading, full grading reports, included subgrades, U-Collect tracking, digital verification and more — all backed by HGA's guaranteed delivery-to-reveal clock.</p>
+        <a href="#pricing" class="btn btn-primary btn-lg">Claim Your Founder's Slot <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="cta-card-fan" aria-hidden="true">
+        <img src="assets/cards/dark-magician.jpg" alt="" class="fan f1" />
+        <img src="assets/cards/umbreon.jpg" alt="" class="fan f2" />
+        <img src="assets/cards/wagner.jpg" alt="" class="fan f3" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. WHO IT'S FOR ============ -->
+<section class="who">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal">Built for every collector</p>
+      <h2 class="h-lg reveal">Whether you're a new, seasoned, or professional collector, the new HGA is the perfect grading system for:</h2>
+    </div>
+    <!-- [IMAGE] placeholders: card art used as stand-in photography -->
+    <div class="who-grid">
+      <a href="#pricing" class="who-card reveal" style="--d:0"><img src="assets/cards/charizard.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-star"/></svg></span><h3>Everyday Collectors / Hobbyists</h3></a>
+      <a href="#pricing" class="who-card reveal" style="--d:1"><img src="assets/cards/cobb-red.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-store"/></svg></span><h3>Card Dealers &amp; Resellers</h3></a>
+      <a href="#pricing" class="who-card reveal" style="--d:2"><img src="assets/cards/sheoldred.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-live"/></svg></span><h3>Breakers</h3></a>
+      <a href="#pricing" class="who-card reveal" style="--d:3"><img src="assets/cards/russell.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-trend"/></svg></span><h3>Sports Card Investors / Flippers</h3></a>
+      <a href="#pricing" class="who-card reveal" style="--d:0"><img src="assets/cards/blue-eyes.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-store"/></svg></span><h3>Card Shops / Local Hobby Stores</h3></a>
+      <a href="#pricing" class="who-card reveal" style="--d:1"><img src="assets/cards/umbreon.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-layers"/></svg></span><h3>TCG Collectors &amp; Players</h3></a>
+      <a href="#pricing" class="who-card reveal" style="--d:2"><img src="assets/cards/wagner.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-gem"/></svg></span><h3>High-End / Grail Collectors</h3></a>
+      <a href="#pricing" class="who-card reveal" style="--d:3"><img src="assets/cards/dark-magician.jpg" alt="" loading="lazy" /><span class="who-ico"><svg><use href="#i-history"/></svg></span><h3>Legacy HGA Customers</h3></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. FEATURES (BENTO) ============ -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal">The full experience</p>
+      <h2 class="h-lg reveal">Everything You Need To Grade, Protect, Verify, Showcase &amp; Trade Your Collection — <span class="accent">With Complete Transparency.</span></h2>
+    </div>
+    <div class="bento">
+      <article class="bento-item b-wide spot reveal"><span class="f-ico"><svg><use href="#i-spark"/></svg></span><h3>More Consistent AI-Assisted Grading</h3><p>Evaluate every card with AI-assisted technology against consistent grading criteria for a more standardized, data-driven result.</p><div class="ai-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+      <article class="bento-item spot reveal" style="--d:1"><span class="f-ico"><svg><use href="#i-eye"/></svg></span><h3>Total Card Visibility</h3><p>Follow your card throughout the grading journey so you're never left wondering what's happening behind closed doors.</p></article>
+      <article class="bento-item spot reveal" style="--d:2"><span class="f-ico"><svg><use href="#i-shield"/></svg></span><h3>Complete Collection Confidence</h3><p>Know your prized cards are being professionally graded, protected, and accounted for.</p></article>
+      <article class="bento-item spot reveal"><span class="f-ico"><svg><use href="#i-zap"/></svg></span><h3>Faster Inventory Turnaround</h3><p>Get your cards graded and back in your hands faster, so they can get back into your collection — or back on the market.</p></article>
+      <article class="bento-item spot reveal" style="--d:1"><span class="f-ico"><svg><use href="#i-box"/></svg></span><h3>Long-Term Card Preservation</h3><p>Safeguard your cards inside protective housing designed to help preserve their condition for years to come.</p></article>
+      <article class="bento-item spot reveal" style="--d:2"><span class="f-ico"><svg><use href="#i-swap"/></svg></span><h3>Safer Buying, Selling &amp; Trading</h3><p>Give both sides of the deal more confidence with professionally graded, digitally verifiable cards.</p></article>
+      <article class="bento-item spot reveal"><span class="f-ico"><svg><use href="#i-users"/></svg></span><h3>Higher Buyer Confidence</h3><p>Give potential buyers more information and verification to feel confident about the card they're purchasing.</p></article>
+      <article class="bento-item spot reveal" style="--d:1"><span class="f-ico"><svg><use href="#i-file"/></svg></span><h3>Easy-To-Understand Grades</h3><p>See the information behind your final grade with included subgrades and a detailed grading report.</p></article>
+      <article class="bento-item spot reveal" style="--d:2"><span class="f-ico"><svg><use href="#i-frame"/></svg></span><h3>Museum-Worthy Card Display</h3><p>Showcase your most prized collectibles inside premium Glass + Metal housing worthy of the card inside.</p></article>
+      <article class="bento-item b-wide b-clock spot reveal"><span class="f-ico"><svg><use href="#i-clock"/></svg></span><h3>Guaranteed Grading Deadlines</h3><p>Know exactly when your grade is due with HGA's guaranteed delivery-to-reveal clock — so you can plan around a deadline, not an estimate.</p><div class="day-dots" aria-hidden="true"></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. SOCIAL PROOF #1 ============ -->
+<section class="proof">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow reveal">Trusted by collectors</p>
+      <h2 class="h-lg reveal">Join The <span class="accent"><span data-count="90000">0</span>+</span> Customers Who Trust HGA With Their Cards</h2>
+    </div>
+    <div class="testis">
+      <!-- [TESTIMONIAL] [PHOTO] [NAME] — placeholders, replace with real customer content -->
+      <figure class="testi reveal"><div class="stars">★★★★★</div><blockquote>[Customer testimonial placeholder — a short quote about the HGA grading experience goes here.]</blockquote><figcaption><img src="assets/people/men-32.jpg" alt="" /><span><b>[Customer Name]</b><small>Verified HGA Customer</small></span></figcaption></figure>
+      <figure class="testi reveal" style="--d:1"><div class="stars">★★★★★</div><blockquote>[Customer testimonial placeholder — a short quote about the HGA grading experience goes here.]</blockquote><figcaption><img src="assets/people/women-44.jpg" alt="" /><span><b>[Customer Name]</b><small>Verified HGA Customer</small></span></figcaption></figure>
+      <figure class="testi reveal" style="--d:2"><div class="stars">★★★★★</div><blockquote>[Customer testimonial placeholder — a short quote about the HGA grading experience goes here.]</blockquote><figcaption><img src="assets/people/men-75.jpg" alt="" /><span><b>[Customer Name]</b><small>Verified HGA Customer</small></span></figcaption></figure>
+    </div>
+    <div class="center reveal"><a href="#pricing" class="btn btn-primary btn-lg">Join The Founder's Launch Now <svg><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ============ 13. BEHIND THE GLASS ============ -->
+<section class="behind">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow reveal">Behind The Glass</p>
+      <h2 class="h-lg reveal">A Closer Look At A New HGA, <span class="accent">Powered By U-Collect</span></h2>
+      <p class="lead reveal">HGA handles the grading. U-Collect powers the connected experience around it — helping you track, verify, collect, trade and manage your cards in one ecosystem.</p>
+    </div>
+    <div class="eco reveal">
+      <div class="orbit" aria-label="HGA at the center of the U-Collect ecosystem: track, verify, collect, trade, manage">
+        <div class="orbit-ring r1"></div><div class="orbit-ring r2"></div>
+        <div class="orbit-core"><img src="assets/hga-logo.png" alt="HGA" /><span class="mono">× U-COLLECT</span></div>
+        <div class="orbit-spin">
+          <span class="node" style="--a:0"><b><svg><use href="#i-search"/></svg>Track</b></span>
+          <span class="node" style="--a:1"><b><svg><use href="#i-nfc"/></svg>Verify</b></span>
+          <span class="node" style="--a:2"><b><svg><use href="#i-layers"/></svg>Collect</b></span>
+          <span class="node" style="--a:3"><b><svg><use href="#i-swap"/></svg>Trade</b></span>
+          <span class="node" style="--a:4"><b><svg><use href="#i-frame"/></svg>Manage</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. CATEGORIES ============ -->
+<section class="cats">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow reveal">Every category</p>
+      <h2 class="h-lg reveal">Collect, Trade &amp; Grade With Confidence</h2>
+      <p class="lead reveal">From sports and TCGs to entertainment and pop culture, HGA's Glass-Box Grading™ gives your favorite cards the transparency, protection, and attention they deserve.</p>
+    </div>
+  </div>
+  <div class="cat-rail">
+    <div class="cat reveal" style="--d:0">
+      <div class="slab" data-tilt><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Honus Wagner</b><span>T206 · Sports</span></div><div class="slab-grade"><b>8</b><span>NM-MT</span></div></div><div class="slab-window"><img src="assets/cards/wagner.jpg" alt="Placeholder sports card" loading="lazy" /></div><span class="slab-shine"></span></div>
+      <p>Sports Cards</p>
+    </div>
+    <div class="cat reveal" style="--d:1">
+      <div class="slab" data-tilt><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Umbreon VMAX</b><span>Evolving Skies · Alt Art</span></div><div class="slab-grade"><b>10</b><span>Gem Mint</span></div></div><div class="slab-window"><img src="assets/cards/umbreon.jpg" alt="Placeholder Pokémon card" loading="lazy" /></div><span class="slab-shine"></span></div>
+      <p>Pokémon Cards</p>
+    </div>
+    <div class="cat reveal" style="--d:2">
+      <div class="slab" data-tilt><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Dark Magician</b><span>Yu-Gi-Oh! TCG</span></div><div class="slab-grade"><b>9.5</b><span>Mint+</span></div></div><div class="slab-window"><img src="assets/cards/dark-magician.jpg" alt="Placeholder Yu-Gi-Oh card" loading="lazy" /></div><span class="slab-shine"></span></div>
+      <p>Yu-Gi-Oh! Cards</p>
+    </div>
+    <div class="cat reveal" style="--d:3">
+      <div class="slab" data-tilt><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Sheoldred</b><span>Magic: The Gathering</span></div><div class="slab-grade"><b>10</b><span>Gem Mint</span></div></div><div class="slab-window"><img src="assets/cards/sheoldred.jpg" alt="Placeholder Magic card" loading="lazy" /></div><span class="slab-shine"></span></div>
+      <p>Magic Cards</p>
+    </div>
+    <div class="cat reveal" style="--d:4">
+      <div class="slab" data-tilt><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>[UFC Card]</b><span>Image placeholder</span></div><div class="slab-grade"><b>9</b><span>Mint</span></div></div><div class="slab-window"><div class="ph-card ph-ufc"><span>UFC</span><small>Card image<br/>placeholder</small></div></div><span class="slab-shine"></span></div>
+      <p>UFC Cards</p>
+    </div>
+    <div class="cat reveal" style="--d:5">
+      <div class="slab" data-tilt><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Mickey Mouse</b><span>Disney Lorcana</span></div><div class="slab-grade"><b>10</b><span>Gem Mint</span></div></div><div class="slab-window"><img src="assets/cards/mickey.jpg" alt="Placeholder Disney card" loading="lazy" /></div><span class="slab-shine"></span></div>
+      <p>Disney Cards</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. STATS ============ -->
+<section class="stats">
+  <div class="container">
+    <h2 class="h-lg center reveal">Despite Our New Beginning, <span class="accent">We're Not Starting From Zero…</span></h2>
+    <div class="stat-grid">
+      <div class="stat reveal" style="--d:0"><b><span data-count="90000">0</span>+</b><p>Customers Served</p><small class="mono">[Source placeholder]</small></div>
+      <div class="stat reveal" style="--d:1"><b><span data-count="180000">0</span>+</b><p>Cards Graded</p><small class="mono">[Source placeholder]</small></div>
+      <div class="stat reveal" style="--d:2"><b><span data-count="85">0</span>%+</b><p>Collectors desire more transparency in grading.</p><small class="mono">[Source placeholder]</small></div>
+      <div class="stat reveal" style="--d:3"><b><em>Up to</em> <span data-count="80">0</span>%</b><p>More Resale Value</p><small class="mono">[Source placeholder]</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 16. HOW IT WORKS ============ -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow reveal">How U-Collect Works</p>
+      <h2 class="h-lg reveal">See your card. See the process. <span class="accent">See the proof.</span></h2>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <div class="tl-rail"><span class="tl-fill"></span></div>
+
+      <div class="tl-step reveal">
+        <span class="tl-num">01</span>
+        <div class="tl-copy"><h3>Send It In</h3><p>You ship your card to HGA for grading. Once the carrier delivers it, your guaranteed delivery-to-reveal clock starts.</p></div>
+        <!-- [IMAGE] -->
+        <div class="tl-visual">
+          <div class="ui-card">
+            <div class="ui-row"><svg><use href="#i-truck"/></svg><span>Carrier status</span><b class="ok">Delivered</b></div>
+            <div class="ui-clock"><span class="mono">CLOCK STARTED</span><b>15</b><small>business days to reveal</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-step reveal">
+        <span class="tl-num">02</span>
+        <div class="tl-copy"><h3>Follow Your Card</h3><p>Your card is checked in and added to the system, where you can follow its progress through the grading process.</p></div>
+        <div class="tl-visual">
+          <div class="ui-card">
+            <ol class="ui-track">
+              <li class="done">Delivered</li><li class="done">Checked in</li><li class="now">In grading</li><li>Encapsulation</li><li>Reveal</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-step reveal">
+        <span class="tl-num">03</span>
+        <div class="tl-copy"><h3>HGA Grades It</h3><p>Your card goes through HGA's AI-assisted grading process, complete with its main grade, included subgrades, autograph grade where applicable, and detailed grading report.</p></div>
+        <div class="tl-visual">
+          <div class="ui-card ui-scan">
+            <img src="assets/cards/charizard.jpg" alt="" loading="lazy" />
+            <span class="scan-line"></span>
+            <div class="scan-tags mono"><span>CENTERING 55/45</span><span>CORNERS 4/4</span><span>SURFACE ✓</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-step reveal">
+        <span class="tl-num">04</span>
+        <div class="tl-copy"><h3>Protect &amp; Verify It</h3><p>Your graded card is secured inside your selected Poly or Glass + Metal housing and connected to digital verification through NFC.</p></div>
+        <div class="tl-visual">
+          <div class="ui-card ui-nfc">
+            <div class="slab slab-xs"><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Charizard</b><span>Base Set</span></div><div class="slab-grade"><b>10</b><span>Gem</span></div></div><div class="slab-window"><img src="assets/cards/charizard.jpg" alt="" loading="lazy" /></div><span class="slab-shine"></span></div>
+            <div class="nfc-phone"><svg><use href="#i-nfc"/></svg><span class="mono">VERIFIED ✓</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-step reveal">
+        <span class="tl-num">05</span>
+        <div class="tl-copy"><h3>Reveal Your Grade</h3><p>See your completed grade and grading details — within 15 business days on the Founder's offer.</p></div>
+        <div class="tl-visual">
+          <div class="ui-card ui-reveal"><span class="mono">YOUR GRADE IS…</span><b>10</b><small>GEM MINT</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow reveal" aria-label="Send it, follow it, grade it, protect it, reveal it">
+      <span>Send it</span><i>→</i><span>Follow it</span><i>→</i><span>Grade it</span><i>→</i><span>Protect it</span><i>→</i><span class="flow-end">Reveal it</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 17. SEE / KNOW / GET MORE ============ -->
+<section class="skm">
+  <div class="container">
+
+    <!-- SEE EVERYTHING -->
+    <div class="skm-block">
+      <div class="skm-copy">
+        <h2 class="skm-title reveal"><span>See</span> Everything</h2>
+        <ul class="skm-list">
+          <li class="reveal"><svg><use href="#i-rotate"/></svg><div><h3>360° Grade Card Reveal</h3><p>See your newly graded card from every angle with an interactive digital reveal.</p></div></li>
+          <li class="reveal"><svg><use href="#i-search"/></svg><div><h3>U-Collect Tracking</h3><p>Follow your card's progress through the grading process instead of wondering where it is.</p></div></li>
+          <li class="reveal"><svg><use href="#i-file"/></svg><div><h3>Full Grading Report</h3><p>See the details and reasoning behind your card's final grade.</p></div></li>
+          <li class="reveal"><svg><use href="#i-target"/></svg><div><h3>FREE Subgrades</h3><p>Get a deeper breakdown of the individual grading criteria behind your overall grade.</p></div></li>
+        </ul>
+      </div>
+      <!-- Image: Smartphone with rotating card + "YOUR GRADE IS…" -->
+      <div class="skm-visual reveal">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <p class="ph-top mono">HGA · U-COLLECT</p>
+            <p class="ph-yg">YOUR GRADE IS…</p>
+            <div class="spin-stage">
+              <div class="spin-card">
+                <img class="sc-front" src="assets/cards/charizard-ex.jpg" alt="" loading="lazy" />
+                <div class="sc-back"><img src="assets/hga-logo.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="ph-grade"><b>10</b><span>GEM MINT</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KNOW EVERYTHING -->
+    <div class="skm-block skm-rev">
+      <div class="skm-copy">
+        <h2 class="skm-title reveal"><span>Know</span> Everything</h2>
+        <ul class="skm-list">
+          <li class="reveal"><svg><use href="#i-clock"/></svg><div><h3>Guaranteed Delivery-to-Reveal Clock</h3><p>Know exactly when your grade is due — backed by HGA's 15-business-day Founder's guarantee.</p></div></li>
+          <li class="reveal"><svg><use href="#i-spark"/></svg><div><h3>AI-Assisted Grading</h3><p>AI-assisted technology helps evaluate your card against consistent grading criteria for a more standardized, data-driven result.</p></div></li>
+          <li class="reveal"><svg><use href="#i-pen"/></svg><div><h3>Autograph Grading Included</h3><p>Submitting a signed card? Get an autograph grade where applicable without paying for an additional add-on.</p></div></li>
+          <li class="reveal"><svg><use href="#i-nfc"/></svg><div><h3>NFC Verification</h3><p>Tap your graded card with your phone to access its digital verification information.</p></div></li>
+          <li class="reveal"><svg><use href="#i-dollar"/></svg><div><h3>No Card-Value Upcharge Through $10K</h3><p>Pay the same grading price on cards valued up to $10,000 — without surprise value-based grading fees.</p></div></li>
+        </ul>
+      </div>
+      <!-- Image: Autographed card with signature highlighted + AUTO GRADE indicator -->
+      <div class="skm-visual reveal">
+        <div class="auto-stage">
+          <div class="auto-card">
+            <img src="assets/cards/russell.jpg" alt="" loading="lazy" />
+            <svg class="sig" viewBox="0 0 300 120" aria-hidden="true"><path d="M18 82c16-30 30-52 40-50 10 2-14 56-6 58 8 2 22-40 34-40s-6 34 4 34 18-30 28-30-2 26 8 26 16-22 26-22c10 0 2 20 12 20s26-34 40-34c12 0-10 40 2 40 10 0 22-14 36-14 10 0 14 6 24 4"/></svg>
+            <span class="sig-box"></span>
+          </div>
+          <div class="auto-badge"><span class="mono">AUTO GRADE</span><b>10</b><i></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GET MORE -->
+    <div class="skm-block">
+      <div class="skm-copy">
+        <h2 class="skm-title reveal"><span>Get</span> More</h2>
+        <ul class="skm-list">
+          <li class="reveal"><svg><use href="#i-tag"/></svg><div><h3>Custom Labels</h3><p>Personalize the presentation of your graded card with custom label options.</p></div></li>
+          <li class="reveal"><svg><use href="#i-star"/></svg><div><h3>Special-Edition Launch Label</h3><p>Mark your card as part of HGA's relaunch with an exclusive launch-edition label.</p></div></li>
+          <li class="reveal"><svg><use href="#i-cal"/></svg><div><h3>Priority Grading-Calendar Access</h3><p>Founder's buyers get priority access to available grading dates when HGA reopens.</p></div></li>
+          <li class="reveal"><svg><use href="#i-crown"/></svg><div><h3>Club U Benefits</h3><p>Unlock additional benefits throughout the U-Collect ecosystem.</p></div></li>
+          <li class="reveal"><svg><use href="#i-gem"/></svg><div><h3>FREE Glass Upgrade For Flawless Cards <span class="tbc">[Placeholder]</span></h3><p>Get qualifying flawless cards into premium Glass housing at no additional charge.</p></div></li>
+        </ul>
+      </div>
+      <!-- Image: Club U membership pass + generic benefit icons -->
+      <div class="skm-visual reveal">
+        <div class="clubu">
+          <div class="clubu-pass" data-tilt>
+            <div class="cp-top"><span class="cp-brand">CLUB <b>U</b></span><span class="cp-chip"></span></div>
+            <div class="cp-mid mono">FOUNDER MEMBER</div>
+            <div class="cp-bot"><span class="mono">U-COLLECT</span><img src="assets/hga-logo.png" alt="" /></div>
+            <span class="slab-shine"></span>
+          </div>
+          <span class="cu-ico i1"><svg><use href="#i-gift"/></svg></span>
+          <span class="cu-ico i2"><svg><use href="#i-star"/></svg></span>
+          <span class="cu-ico i3"><svg><use href="#i-zap"/></svg></span>
+          <span class="cu-ico i4"><svg><use href="#i-crown"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 18. PRICING ============ -->
+<section class="pricing" id="pricing">
+  <div class="pricing-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow eyebrow-gold reveal"><span class="live-dot"></span> An extremely limited time offer</p>
+      <h2 class="h-xl reveal">Grade Your Cards In 15 Business Days — <span class="accent">Starting At Just $50</span></h2>
+      <p class="lead reveal"><b>Lock in Founder's pricing before HGA officially reopens.</b><br/>Be among the first collectors to experience Glass-Box Grading™ and secure your grading slots at special Founder's pricing.</p>
+    </div>
+
+    <div class="plans">
+      <article class="plan plan-poly reveal">
+        <header>
+          <span class="plan-kicker">Poly Founder's Slot</span>
+          <div class="plan-price">
+            <span class="was"><small>Regular</small><s>$60</s></span>
+            <span class="now"><small>Founder's Price</small><b>$50</b></span>
+          </div>
+          <span class="save">Save $10</span>
+        </header>
+        <ul class="plan-list">
+          <li>15-Business-Day Grade Reveal</li>
+          <li>AI-Assisted Grading</li>
+          <li>Full Grading Report</li>
+          <li>FREE Subgrades</li>
+          <li>Autograph Grading Included</li>
+          <li>U-Collect Tracking</li>
+          <li>NFC Verification</li>
+          <li>Special-Edition Launch Label</li>
+          <li>Priority Grading-Calendar Access</li>
+          <li>Club U Benefits</li>
+          <li>No Card-Value Upcharge Through $10K</li>
+        </ul>
+        <a href="#claim-poly" class="btn btn-primary btn-block btn-lg">Claim My $50 Slot <svg><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="plan plan-glass reveal" style="--d:1">
+        <span class="plan-ribbon">Premium</span>
+        <header>
+          <span class="plan-kicker">Glass Founder's Slot</span>
+          <div class="plan-price">
+            <span class="was"><small>Regular</small><s>$240</s></span>
+            <span class="now"><small>Founder's Price</small><b>$200</b></span>
+          </div>
+          <span class="save">Save $40</span>
+        </header>
+        <div class="glass-preview" aria-hidden="true">
+          <div class="slab slab-glass" data-tilt><div class="slab-label"><img src="assets/hga-logo.png" alt="" class="slab-logo" /><div class="slab-meta"><b>Charizard ex</b><span>Glass + Metal</span></div><div class="slab-grade"><b>10</b><span>Gem Mint</span></div></div><div class="slab-window"><img src="assets/cards/charizard-ex.jpg" alt="" loading="lazy" /></div><span class="slab-shine"></span></div>
+        </div>
+        <ul class="plan-list">
+          <li>Premium Glass + Metal Housing</li>
+          <li>Museum-Worthy Card Presentation</li>
+          <li class="tbc-item">[Any confirmed Glass-exclusive benefits]</li>
+        </ul>
+        <a href="#claim-glass" class="btn btn-glass btn-block btn-lg">Claim My $200 Slot <svg><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+
+    <p class="plans-note reveal">Both include a <b>15-business-day guaranteed delivery-to-reveal turnaround</b>, plus the transparency benefits built into the new HGA experience — full grading report, subgrades, autograph grade where applicable, and no card-value upcharge through $10,000.</p>
+  </div>
+</section>
+
+<!-- ============ 19. GUARANTEE ============ -->
+<section class="guarantee">
+  <div class="container g-grid">
+    <!-- [IMAGE: 15-BUSINESS DAY GUARANTEE ICON] -->
+    <div class="seal reveal" aria-hidden="true">
+      <svg class="seal-ring" viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#circ" textLength="486" lengthAdjust="spacing">NO-EXCUSES GUARANTEE · 15 BUSINESS DAYS · </textPath></text></svg>
+      <div class="seal-core"><b>15</b><span>Business<br/>Days</span></div>
+    </div>
+    <div class="g-copy">
+      <p class="eyebrow reveal">Our promise, in writing</p>
+      <h2 class="h-lg reveal">The 15-Day <span class="accent">"No-Excuses"</span> Guarantee</h2>
+      <p class="lead reveal">The clock starts when the carrier delivers your card. Your grade will be revealed within 15 business days. <b>If we miss the deadline, your account is automatically credited.</b></p>
+      <div class="g-clock reveal" aria-label="Fifteen business day clock">
+        <div class="gc-days" id="gcDays"></div>
+        <div class="gc-labels mono"><span>Carrier delivers · clock starts</span><span>Grade revealed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 20. SOCIAL PROOF #2 ============ -->
+<section class="proof proof-2">
+  <div class="container">
+    <div class="sec-head center">
+      <h2 class="h-lg reveal">Let Us Earn Your Trust <span class="accent">The Same Way We Did For Countless Happy Collectors</span></h2>
+    </div>
+    <div class="testis">
+      <figure class="testi reveal"><div class="stars">★★★★★</div><blockquote>[Customer testimonial placeholder — a short quote about the HGA grading experience goes here.]</blockquote><figcaption><img src="assets/people/women-68.jpg" alt="" /><span><b>[Customer Name]</b><small>Verified HGA Customer</small></span></figcaption></figure>
+      <figure class="testi reveal" style="--d:1"><div class="stars">★★★★★</div><blockquote>[Customer testimonial placeholder — a short quote about the HGA grading experience goes here.]</blockquote><figcaption><img src="assets/people/men-41.jpg" alt="" /><span><b>[Customer Name]</b><small>Verified HGA Customer</small></span></figcaption></figure>
+      <figure class="testi reveal" style="--d:2"><div class="stars">★★★★★</div><blockquote>[Customer testimonial placeholder — a short quote about the HGA grading experience goes here.]</blockquote><figcaption><img src="assets/people/women-12.jpg" alt="" /><span><b>[Customer Name]</b><small>Verified HGA Customer</small></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 21. FINAL CLOSE ============ -->
+<section class="final">
+  <div class="final-bg" aria-hidden="true"></div>
+  <div class="container narrow">
+    <h2 class="h-xl center reveal">Are You Ready For The Most Transparent Grading Experience In The Hobby?</h2>
+    <p class="final-kicker center reveal">The days of "Black Box grading" are <span class="accent">officially over.</span></p>
+    <div class="final-letter">
+      <p class="reveal">No more asking "WHY?" regarding your grades…</p>
+      <p class="reveal">Or letting you down with un-met turnaround times.</p>
+      <p class="reveal">Now you can see it all for yourself as you track your card's grading journey from beginning to end…</p>
+      <p class="reveal">Receive thorough grading from our new, AI-assisted technology.</p>
+      <p class="reveal">And more importantly: <b class="hl">hold us to our deadline.</b></p>
+      <p class="reveal">We know we still have a lot to atone for — and this is how we'll start.</p>
+      <p class="reveal"><b>So what are you waiting for?</b></p>
+    </div>
+    <div class="final-cta center reveal">
+      <p>Lock in your Founder's pricing today before the official launch.</p>
+      <a href="#pricing" class="btn btn-primary btn-xl">Join The Founder's Launch Now <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 22. FAQ (draft — answers taken from page copy; confirm with HGA) ============ -->
+<section class="faq" id="faq">
+  <div class="container narrow">
+    <div class="sec-head center"><p class="eyebrow reveal">FAQ</p><h2 class="h-lg reveal">Questions, answered.</h2></div>
+    <div class="faq-list">
+      <details class="reveal"><summary>What is Glass-Box Grading™?<span></span></summary><p>It's HGA's new grading standard. Instead of sending your cards into a "black box," you can follow your card from delivery to grade reveal — with card tracking, a guaranteed deadline, a full grading report with subgrades, and visible proof behind your grade.</p></details>
+      <details class="reveal"><summary>When does the 15-business-day clock start?<span></span></summary><p>The clock starts when the carrier delivers your card to HGA. Your grade will be revealed within 15 business days on the Founder's offer.</p></details>
+      <details class="reveal"><summary>What happens if HGA misses the deadline?<span></span></summary><p>If we miss the deadline, your account is automatically credited.</p></details>
+      <details class="reveal"><summary>What's the difference between the Poly and Glass Founder's slots?<span></span></summary><p>Both include the 15-business-day guaranteed delivery-to-reveal turnaround, full grading report, subgrades, autograph grade where applicable, and no card-value upcharge through $10,000. The Glass slot secures your card inside premium Glass + Metal housing for a museum-worthy presentation.</p></details>
+      <details class="reveal"><summary>Is there an upcharge for high-value cards?<span></span></summary><p>You pay the same grading price on cards valued up to $10,000 — without surprise value-based grading fees.</p></details>
+      <details class="reveal"><summary>How does HGA work with U-Collect?<span></span></summary><p>HGA handles the grading. U-Collect powers the connected experience around it — helping you track, verify, collect, trade and manage your cards in one ecosystem.</p></details>
+      <details class="reveal"><summary>What card categories can I submit?<span></span></summary><p>From sports and TCGs to entertainment and pop culture — including sports, Pokémon, Yu-Gi-Oh!, Magic, UFC and Disney cards.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="f-brand"><img src="assets/hga-logo.png" alt="HGA" /><p>Glass-Box Grading™ · Now powered by U-Collect</p></div>
+    <nav class="f-links" aria-label="Footer"><a href="#glass-box">Glass-Box Grading™</a><a href="#how">How It Works</a><a href="#pricing">Founder's Pricing</a><a href="#faq">FAQ</a><a href="mailto:support@hybridgrading.com">support@hybridgrading.com</a></nav>
+    <p class="f-legal">© 2026 HGA. All rights reserved. Card images shown are placeholders.</p>
+  </div>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <div><b>Founder's Slot</b><span>from <s>$60</s> <em>$50</em></span></div>
+  <a href="#pricing" class="btn btn-primary btn-sm">Claim Now</a>
+</div>
+
+<!-- Video modal (placeholder) -->
+<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="HGA demo video" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-body">
+    <button class="modal-close" data-close aria-label="Close video"><svg><use href="#i-x"/></svg></button>
+    <div class="modal-video">
+      <!-- Replace with the final demo video embed, e.g. <video src="assets/hga-demo.mp4" controls autoplay playsinline></video> -->
+      <img src="assets/photos/grader-bench.jpg" alt="" />
+      <p class="mono">[DEMO VIDEO PLACEHOLDER]</p>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -164,7 +164,7 @@ p { margin: 0 0 1em; }
 .nav-links a:hover::after { transform: scaleX(1); }
 
 /* ---------- HERO ---------- */
-.hero { position: relative; padding: clamp(48px, 8vw, 96px) 0 clamp(80px, 10vw, 130px); overflow: hidden; margin-top: -72px; padding-top: calc(72px + clamp(48px, 7vw, 90px)); }
+.hero { position: relative; padding: clamp(48px, 8vw, 96px) 0 clamp(40px, 5vw, 64px); overflow: hidden; margin-top: -72px; padding-top: calc(72px + clamp(48px, 7vw, 90px)); }
 .hero-bg { position: absolute; inset: 0; pointer-events: none; }
 .grid-lines {
   position: absolute; inset: 0;
@@ -301,7 +301,7 @@ p { margin: 0 0 1em; }
 .slab-xs { width: 62%; font-size: 12px; }
 
 /* ---------- MANIFESTO ---------- */
-.manifesto { padding: var(--section) 0 calc(var(--section) * .6); }
+.manifesto { padding: clamp(32px, 4vw, 56px) 0 calc(var(--section) * .6); }
 .scrub-text { font-size: var(--fs-h2-xl); font-weight: 800; line-height: 1.02; letter-spacing: -0.035em; text-align: center; max-width: 1150px; margin: 0 auto; }
 .scrub-text .w { opacity: .14; transition: opacity .25s linear; }
 .scrub-text .w.on { opacity: 1; }

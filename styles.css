@@ -1058,3 +1058,39 @@ p { margin: 0 0 1em; }
   .booklet-lens { width: 104px; height: 104px; }
   .bk-panel span { display: none; }
 }
+
+/* =========================================================
+   FEEDBACK ROUND — risk reversal, presale date, includes,
+   launch prices, moved choice section, trimmed grids
+   ========================================================= */
+.cta-risk { margin: 4px 0 0; font-family: var(--f-head); font-weight: 700; font-size: 15px; color: #fff; }
+.cta-date { margin: 0; font-size: 14px; color: var(--muted); }
+.cta-date b { color: #fff; }
+.offer-risk { margin: 18px auto 0; font-family: var(--f-head); font-weight: 700; font-size: var(--fs-h4); color: #fff; }
+.offer-date { margin: 14px auto 0; font-size: 15.5px; color: var(--ink-2); }
+.offer-date b { color: #fff; }
+.includes { display: flex; align-items: flex-start; justify-content: center; gap: 10px; max-width: 900px; margin: 0 auto 40px; padding: 16px 22px; border-radius: var(--r-md); border: 1px solid rgba(230,36,41,.35); background: rgba(230,36,41,.06); color: #fff; font-size: 15.5px; text-align: left; }
+.includes svg { color: var(--accent); margin-top: 4px; }
+.choice-inline { padding: 0; margin-top: clamp(64px, 8vw, 100px); }
+.choice-was { display: block; margin-top: 6px; font-size: 13.5px; color: var(--muted); }
+.choice-was s { text-decoration-color: var(--accent); }
+.choice-was em { font-style: normal; font-weight: 600; color: var(--accent-2); }
+.choice-glass .choice-was em { color: var(--gold); }
+.plan-list li small { display: block; font-size: 12.5px; color: var(--muted); }
+.cat-rail { grid-template-columns: repeat(4, 1fr); max-width: 1040px; }
+.stat-grid { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1100px) {
+  .cat-rail { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+  .cat:nth-child(3n+2) { margin-top: 0; }
+  .cat:nth-child(even) { margin-top: 40px; }
+}
+@media (max-width: 860px) {
+  .stat-grid { grid-template-columns: repeat(3, 1fr); gap: 0; }
+  .stat:nth-child(3) { border-left: 1px solid var(--line); }
+  .sticky-cta span { font-size: 12px; }
+}
+@media (max-width: 560px) {
+  .stat-grid { grid-template-columns: 1fr; }
+  .stat, .stat:nth-child(3) { border-left: 0; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .includes { font-size: 14.5px; padding: 14px 16px; }
+}

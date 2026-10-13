@@ -1142,3 +1142,34 @@ p { margin: 0 0 1em; }
 .choice-card .btn { white-space: nowrap; padding-left: 26px; padding-right: 26px; }
 @media (max-width: 1100px) { .choice-grid { grid-template-columns: 1fr; } }
 @media (max-width: 860px) { .plan.plan-glass.reveal.in { transform: none; } }
+
+/* =========================================================
+   PROBLEM: text beside visuals, "No idea" as its own section
+   ========================================================= */
+.problem-intro { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.problem-intro .problem-visuals { margin-bottom: 0; }
+.problem-2 { background: #070707; }
+.problem-2 .no-idea { margin-top: 0; }
+@media (max-width: 1000px) {
+  .problem-intro { grid-template-columns: 1fr; }
+}
+
+/* Problem visuals: "?" box is the main image, order-status card layered bottom-left */
+.problem-intro .problem-visuals { display: block; position: relative; padding: 0 0 48px 40px; }
+.problem-intro .abyss { min-height: 0; aspect-ratio: 5 / 4; width: 100%; }
+.problem-intro .old-tracker { position: absolute; left: 0; bottom: 0; z-index: 2; width: 42%; font-size: 11.5px; box-shadow: 0 30px 60px rgba(0,0,0,.75), 0 0 0 1px rgba(255,255,255,.06); }
+.problem-intro .old-tracker .ot-body { padding: 12px 16px 14px; }
+.problem-intro .old-tracker .ot-head { padding: 10px 14px; font-size: 11px; }
+.problem-intro .old-tracker .ot-row { padding: 7px 0; }
+.problem-intro .old-tracker .ot-foot { font-size: 11px; }
+.problem-intro .old-tracker .ot-bar { margin: 12px 0 8px; }
+@media (max-width: 560px) {
+  .problem-intro .problem-visuals { padding: 0 0 40px 16px; }
+  .problem-intro .abyss { aspect-ratio: 1 / 1.05; }
+  .problem-intro .old-tracker { width: 54%; font-size: 9.5px; }
+  .problem-intro .old-tracker .ot-head { padding: 7px 10px; font-size: 9px; }
+  .problem-intro .old-tracker .ot-body { padding: 6px 10px 8px; }
+  .problem-intro .old-tracker .ot-row { padding: 4px 0; }
+  .problem-intro .old-tracker .ot-foot { font-size: 9px; }
+  .problem-intro .old-tracker .ot-bar { margin: 10px 0 6px; }
+}

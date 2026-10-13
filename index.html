@@ -320,34 +320,40 @@
 <!-- ============ 4. THE PROBLEM: BLACK BOX ============ -->
 <section class="problem">
   <div class="container">
-    <div class="problem-visuals">
-      <!-- [IMAGE] 1 — the old "tracking" experience -->
-      <div class="old-tracker reveal" aria-label="Illustration: a typical grading order status with no information">
-        <div class="ot-head"><span class="ot-dots"><i></i><i></i><i></i></span><span>order-status</span></div>
-        <div class="ot-body">
-          <div class="ot-row"><span>Order</span><b>#58219-B</b></div>
-          <div class="ot-row"><span>Status</span><b class="ot-glitch" data-text="IN GRADING">IN GRADING</b></div>
-          <div class="ot-row"><span>Grader</span><b class="ot-redact">██████████</b></div>
-          <div class="ot-row"><span>Est. return</span><b class="ot-redact">TBD</b></div>
-          <div class="ot-bar"><span></span></div>
-          <p class="ot-foot">Last update: 47 days ago</p>
+    <div class="problem-intro">
+      <div class="problem-head">
+        <p class="eyebrow eyebrow-bad reveal">The real problem</p>
+        <h2 class="h-xl reveal">"Black Box <span class="strike-bad">Grading.</span>"</h2>
+        <p class="lead reveal">What's "Black Box Grading?" You already know the experience:</p>
+        <p class="reveal">You send in your card, and wait in what feels like a <em>mysterious abyss.</em></p>
+      </div>
+      <div class="problem-visuals">
+        <!-- [IMAGE] 1 — the old "tracking" experience -->
+        <div class="old-tracker reveal" aria-label="Illustration: a typical grading order status with no information">
+          <div class="ot-head"><span class="ot-dots"><i></i><i></i><i></i></span><span>order-status</span></div>
+          <div class="ot-body">
+            <div class="ot-row"><span>Order</span><b>#58219-B</b></div>
+            <div class="ot-row"><span>Status</span><b class="ot-glitch" data-text="IN GRADING">IN GRADING</b></div>
+            <div class="ot-row"><span>Grader</span><b class="ot-redact">██████████</b></div>
+            <div class="ot-row"><span>Est. return</span><b class="ot-redact">TBD</b></div>
+            <div class="ot-bar"><span></span></div>
+            <p class="ot-foot">Last update: 47 days ago</p>
+          </div>
+        </div>
+        <!-- [IMAGE] 2 — the abyss -->
+        <div class="abyss reveal" style="--d:1" aria-label="Illustration: a card disappearing into a black box">
+          <div class="abyss-hole"></div>
+          <img class="abyss-card" src="assets/cards/umbreon.jpg" alt="" />
+          <span class="abyss-q q1">?</span><span class="abyss-q q2">?</span><span class="abyss-q q3">?</span>
         </div>
       </div>
-      <!-- [IMAGE] 2 — the abyss -->
-      <div class="abyss reveal" style="--d:1" aria-label="Illustration: a card disappearing into a black box">
-        <div class="abyss-hole"></div>
-        <img class="abyss-card" src="assets/cards/umbreon.jpg" alt="" />
-        <span class="abyss-q q1">?</span><span class="abyss-q q2">?</span><span class="abyss-q q3">?</span>
-      </div>
     </div>
+  </div>
+</section>
 
-    <div class="problem-head">
-      <p class="eyebrow eyebrow-bad reveal">The real problem</p>
-      <h2 class="h-xl reveal">"Black Box <span class="strike-bad">Grading.</span>"</h2>
-      <p class="lead reveal">What's "Black Box Grading?" You already know the experience:</p>
-      <p class="reveal">You send in your card, and wait in what feels like a <em>mysterious abyss.</em></p>
-    </div>
-
+<!-- ============ 4b. YOU HAVE NO IDEA ============ -->
+<section class="problem problem-2">
+  <div class="container">
     <p class="no-idea reveal">You have <b>NO</b> idea:</p>
     <div class="unknowns">
       <div class="unknown reveal" style="--d:0"><span class="u-q">?</span><span class="u-k">Who</span><p>is grading your card</p></div>

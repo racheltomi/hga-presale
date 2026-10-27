@@ -145,10 +145,10 @@
   /* ---------- Day grids (features card + guarantee) ---------- */
   const dayDots = $(".day-dots");
   if (dayDots) {
-    for (let d = 1; d <= 15; d++) { const i = document.createElement("i"); i.textContent = d; dayDots.append(i); }
+    for (let d = 1; d <= 30; d++) { const i = document.createElement("i"); i.textContent = d; dayDots.append(i); }
     const dots = $$("i", dayDots);
     let n = 0;
-    if (!reduce) setInterval(() => { n = (n + 1) % 18; dots.forEach((el, k) => el.classList.toggle("on", k < n)); }, 260);
+    if (!reduce) setInterval(() => { n = (n + 1) % 33; dots.forEach((el, k) => el.classList.toggle("on", k < n)); }, 260);
     else dots.forEach((el) => el.classList.add("on"));
   }
   const gcDays = $("#gcDays");
@@ -306,4 +306,18 @@
     $$("[data-close]", modal).forEach((el) => el.addEventListener("click", close));
     addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hidden) close(); });
   }
+})();
+
+/* Priority Grading Calendar illustration: available, full and weekend days, one date picked */
+(() => {
+  const cal = document.querySelector("[data-cal-ui]");
+  if (!cal) return;
+  const full = [1, 2, 3, 4, 5, 8, 9];
+  let h = "";
+  for (let d = 1; d <= 28; d++) {
+    const wd = (d - 1) % 7;
+    const cls = wd > 4 ? "off" : full.includes(d) ? "full" : d === 12 ? "pick" : "";
+    h += `<i class="${cls}">${d}</i>`;
+  }
+  cal.innerHTML = h;
 })();

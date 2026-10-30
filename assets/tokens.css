@@ -1,0 +1,80 @@
+/* ============================================================================
+   HGA (Hybrid Grading Approach) design tokens. Machine readable source of truth.
+   Source: hybridgradingapproach.com build, version I, computed CSS measured 2026-10-30.
+   Companion: design-system.html (human reference) + tokens.json (same values).
+
+   USAGE: import this at the top of any HGA deliverable so colors, fonts and
+   geometry come from one place. Do not hardcode hex values in the design.
+     <link rel="stylesheet" href="/brand-guides/hga/tokens.css">
+   The site itself exposes the same values as --red, --ink-2, --r etc. in hga.css.
+
+   RULE: dark theme only. Barlow everywhere, Barlow Semi Condensed for small
+   uppercase labels. 10 / 14 / 22px corners, 1px white tint borders, square inputs.
+   ============================================================================ */
+:root {
+  /* Brand */
+  --brand-accent:        #E62429;  /* primary button, booked day, selection, HGA column tint */
+  --brand-accent-deep:   #99161C;  /* button hover */
+  --brand-accent-soft:   #FF6B6E;  /* kickers, table ticks, inline icons */
+  --brand-accent-text:   #FF4A4F;  /* error text, risk icons */
+  --brand-success:       #3CCF7A;  /* "no upcharge", benefit ticks */
+  --brand-gold-a:        #F5E6B3;  /* Flawless gradient only */
+  --brand-gold-b:        #C9A24A;
+  --brand-gold-c:        #8C6D39;
+  --brand-gold:          linear-gradient(135deg, #F5E6B3 0%, #C9A24A 45%, #8C6D39 100%);
+
+  /* Surface (dark only) */
+  --brand-bg:            #0B0A0A;  /* page */
+  --brand-ink:           #0E0E0E;  /* announcement bar, dark pills */
+  --brand-card:          #141212;  /* cards, tiers, tickets */
+  --brand-surface:       #151212;  /* tier radios, pass inputs */
+  --brand-surface-2:     #1C1818;  /* form inputs, pricing cards */
+  --brand-surface-3:     #1B1818;  /* search field */
+  --brand-footer:        #000000;
+
+  /* Text and lines */
+  --brand-text:          #F6F4F0;  /* headings, body default */
+  --brand-text-2:        #CFC9C2;  /* nav links */
+  --brand-text-72:       rgba(255,255,255,.72);  /* body paragraphs */
+  --brand-text-78:       rgba(255,255,255,.78);  /* lede */
+  --brand-text-70:       rgba(255,255,255,.70);  /* eyebrow */
+  --brand-text-55:       rgba(255,255,255,.55);  /* labels, hints */
+  --brand-text-50:       rgba(255,255,255,.50);  /* table heads */
+  --brand-muted:         #9A948E;  /* eyebrows above section headings, captions */
+  --brand-line-soft:     rgba(255,255,255,.10);  /* table rows, tier radios, footer rule */
+  --brand-line:          rgba(255,255,255,.12);  /* card borders */
+  --brand-line-2:        rgba(255,255,255,.22);  /* input borders */
+  --brand-line-ghost:    rgba(255,255,255,.35);  /* ghost button border */
+
+  /* Type */
+  --brand-font-body:     "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --brand-font-head:     "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --brand-font-lab:      "Barlow Semi Condensed", "Barlow", sans-serif;
+  --brand-body-weights:  400 500 600 700 800;
+  --brand-lab-weights:   600;
+  --brand-head-tracking: -.03em;
+
+  /* Geometry */
+  --brand-radius-sm:     10px;     /* buttons, pills, calendar days */
+  --brand-radius:        14px;     /* cards, tiers, rows, tickets */
+  --brand-radius-lg:     22px;     /* calendar card, split cards */
+  --brand-radius-input:  0px;      /* inputs are square */
+  --brand-shadow-btn:    0 10px 26px rgba(230,36,41,.22);
+  --brand-shadow-card:   0 24px 48px rgba(0,0,0,.55);
+  --brand-shadow-glow:   0 30px 80px -30px rgba(230,36,41,.4);
+  --brand-shadow-slab:   drop-shadow(0 28px 36px rgba(0,0,0,.6));
+
+  /* Buttons */
+  --brand-btn-transform: uppercase;
+  --brand-btn-tracking:  .04em;
+  --brand-btn-weight:    700;
+  --brand-btn-size:      15px;
+  --brand-btn-pad:       14px 30px;
+  --brand-btn-minh:      52px;
+  --brand-btn-ghost-size: 14px;
+
+  /* Labels */
+  --brand-kicker-tracking: .18em;  /* Semi Condensed 600 13px, accent soft */
+  --brand-eyebrow-tracking: .08em; /* Barlow 600 12px, white .7 */
+  --brand-label-tracking: .14em;   /* Semi Condensed 600 12px, white .55 */
+}

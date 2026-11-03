@@ -1,0 +1,140 @@
+/* Buy box: cards, then Glass or Poly, then sizes. One question open at a time. */
+.bd{display:grid;gap:10px;margin-top:18px}
+.bd [hidden]{display:none!important}
+.bd-s{border:1px solid rgba(255,255,255,.12);border-radius:var(--r);background:#141212;transition:border-color .15s,opacity .15s}
+.bd-s.on{border-color:rgba(255,255,255,.28)}
+.bd-s:focus{outline:none}
+.bd-s.todo{opacity:.5}
+.bd-head{display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;background:none;border:0;color:#fff;font:inherit;text-align:left}
+button.bd-head:not(:disabled){cursor:pointer}
+.bd-head:disabled{cursor:default;color:#fff}
+.bd-n{position:relative;display:grid;place-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.08);font-size:13px;font-weight:700}
+.bd-n i{font-style:normal}
+.bd-n .ico{display:none;width:14px;height:14px;color:#FF6B6E;stroke-width:2.4}
+.bd-s.on .bd-n{background:var(--red)}
+.bd-s.done .bd-n i{display:none}
+.bd-s.done .bd-n .ico{display:block}
+.bd-t{flex:1;min-width:0;font-weight:700;font-size:17px;line-height:1.25}
+.bd-sum,.bd-edit{display:none}
+.bd-s.done .bd-t{display:none}
+.bd-s.done .bd-sum{display:block;flex:1;font-weight:700;font-size:16px}
+.bd-s.done .bd-edit{display:block;font-size:14px;font-weight:600;color:rgba(255,255,255,.72);text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.3)}
+.bd-s.done .bd-head:hover .bd-edit{color:#fff}
+.bd-b{display:grid;gap:12px;padding:2px 16px 16px;animation:bdIn .3s ease}
+@keyframes bdIn{from{opacity:0}}
+
+/* Steppers */
+.bd-st{display:inline-flex;align-items:center;flex:none;border:1px solid rgba(255,255,255,.22);border-radius:var(--r-sm);overflow:hidden}
+.bd-st button{display:grid;place-items:center;width:44px;height:44px;background:none;border:0;color:#fff;cursor:pointer;transition:background .15s}
+.bd-st button:hover:not(:disabled){background:rgba(255,255,255,.1)}
+.bd-st button:disabled{color:rgba(255,255,255,.25);cursor:default}
+.bd-st .ico{width:16px;height:16px;stroke-width:2.2}
+.bd-st input,.bd-st output{width:52px;height:44px;border:0;border-inline:1px solid rgba(255,255,255,.14);border-radius:0;background:none;color:#fff;font:700 18px/44px var(--sans);text-align:center;-moz-appearance:textfield;appearance:textfield}
+.bd-st input::-webkit-outer-spin-button,.bd-st input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.bd-st input:focus{outline:2px solid #fff;outline-offset:-2px}
+.bd-st button:focus-visible{outline:2px solid #fff;outline-offset:-2px}
+.bd-st.big button{width:56px;height:56px}
+.bd-st.big input{width:72px;height:56px;font-size:24px;line-height:56px}
+.bd-st.sm button{width:38px;height:38px}
+.bd-st.sm output{display:block;width:38px;height:38px;font-size:15px;line-height:38px}
+
+/* Step 1 */
+.bd-count{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.bd-chips{display:flex;flex:1;gap:6px;min-width:0}
+.bd-chips button{flex:1;min-width:44px;height:56px;border:1px solid rgba(255,255,255,.16);border-radius:var(--r-sm);background:none;color:#fff;font:700 15px var(--sans);cursor:pointer;transition:background .15s,border-color .15s}
+.bd-chips button:hover{border-color:rgba(255,255,255,.4)}
+.bd-chips button[aria-pressed="true"]{background:#fff;border-color:#fff;color:#0B0A0A}
+
+/* Step 2: Glass is the card, Poly the quiet row */
+.bd-h{position:relative;display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:14px;align-items:center;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:var(--r);transition:border-color .15s,opacity .15s,background .15s}
+.bd-h.glass{border-color:rgba(230,36,41,.55);background:radial-gradient(ellipse 80% 120% at 0 0,rgba(230,36,41,.14),transparent 70%)}
+.bd-h.poly{grid-template-columns:36px minmax(0,1fr) auto;padding:10px 14px}
+.bd-img{width:100%;height:auto}
+.bd-ht{display:grid;gap:4px;justify-items:start;min-width:0}
+.bd-wm{height:18px;width:auto}
+.bd-h.poly .bd-wm{height:13px}
+.bd-d{font-size:13.5px;line-height:1.35;color:rgba(255,255,255,.72)}
+.bd-p{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;font-size:14px;color:rgba(255,255,255,.55)}
+.bd-p b{font-weight:800;font-size:22px;line-height:1;color:#fff}
+.bd-h.poly .bd-p b{font-size:17px}
+.bd-p s{font-size:13px;color:rgba(255,255,255,.45)}
+.bd-p em{font-style:normal;font-size:13px}
+.bd-dot{display:none;width:20px;height:20px;border:1.5px solid rgba(255,255,255,.35);border-radius:50%}
+.is-one .bd-h{cursor:pointer}
+.is-one .bd-h .bd-st{display:none}
+.is-one .bd-dot{display:block}
+.is-one .bd-h.sel{border-color:#fff;box-shadow:inset 0 0 0 1px #fff}
+.is-one .bd-h.sel .bd-dot{border-color:#fff;background:var(--red);box-shadow:inset 0 0 0 4px #141212}
+.is-one .bd-h.off{opacity:.82}
+.is-one .bd-h:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.bd-range{-webkit-appearance:none;appearance:none;width:100%;height:28px;margin:0;background:none;cursor:pointer}
+.bd-range::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--red) var(--p,100%),rgba(255,255,255,.2) var(--p,100%))}
+.bd-range::-moz-range-track{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--red) var(--p,100%),rgba(255,255,255,.2) var(--p,100%))}
+.bd-range::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;margin-top:-9px;border:0;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.6)}
+.bd-range::-moz-range-thumb{width:24px;height:24px;border:0;border-radius:50%;background:#fff}
+.bd-range:focus-visible{outline:2px solid #fff;outline-offset:2px;border-radius:6px}
+.bd-note{margin:0;font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.62)}
+.bd-note a{color:#fff;text-underline-offset:3px}
+
+/* Step 3 */
+.bd-seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.bd-seg button{min-height:48px;padding:8px 12px;border:1px solid rgba(255,255,255,.16);border-radius:var(--r-sm);background:none;color:#fff;font:600 15px/1.2 var(--sans);cursor:pointer;transition:border-color .15s}
+.bd-seg button:hover{border-color:rgba(255,255,255,.4)}
+.bd-seg button[aria-checked="true"]{border-color:#fff;box-shadow:inset 0 0 0 1px #fff;font-weight:700}
+.bd-sizes{display:grid;gap:10px}
+/* Each housing is its own panel, styled like its row in step 2: Glass carries the red edge and wash, Poly stays neutral */
+.bd-zg{display:grid;gap:0;padding:12px 14px 6px;border:1px solid rgba(255,255,255,.12);border-radius:var(--r)}
+.bd-zg.glass{border-color:rgba(230,36,41,.55);background:radial-gradient(ellipse 80% 120% at 0 0,rgba(230,36,41,.14),transparent 70%)}
+.bd-zg.poly{background:rgba(255,255,255,.03)}
+.bd-zh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 10px;font-size:14px;color:rgba(255,255,255,.62)}
+.bd-zh img{width:auto;height:18px}
+.bd-zg.poly .bd-zh img{height:15px}
+.bd-z{display:grid;grid-template-columns:minmax(0,1fr) 52px 116px;gap:10px;align-items:center;min-height:54px;padding:6px 0;border-top:1px solid rgba(255,255,255,.1);font-size:15px;color:#fff}
+.bd-zn{font-weight:600}
+.bd-zn{display:flex;align-items:center;gap:8px;min-width:0}
+.bd-zn select{padding:5px 4px;border:1px solid rgba(255,255,255,.22);border-radius:6px;background:#1C1818;color:#fff;font:500 14px var(--sans)}
+.bd-x{display:grid;place-items:center;flex:none;width:28px;height:28px;padding:0;border:1px solid rgba(255,255,255,.16);border-radius:var(--r-sm);background:none;color:rgba(255,255,255,.72);cursor:pointer;transition:color .15s,border-color .15s,background .15s}
+.bd-x .ico{width:13px;height:13px;stroke-width:2.2}
+.bd-x:hover{color:#FF4A4F;border-color:rgba(255,74,79,.6);background:rgba(230,36,41,.1)}
+.bd-x:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.bd-more{display:flex;align-items:center;gap:10px;width:100%;min-height:46px;padding:0;border:0;border-top:1px solid rgba(255,255,255,.1);background:none;color:#fff;font:600 14px/1.2 var(--sans);text-align:left;cursor:pointer;transition:color .15s}
+.bd-more .ico{display:block;flex:none;width:18px;height:18px;padding:3px;border-radius:50%;background:rgba(255,255,255,.1);color:#FF6B6E;stroke-width:2.6}
+.bd-more span{text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.3);transition:text-decoration-color .15s}
+.bd-more:hover:not(:disabled) span{text-decoration-color:#fff}
+.bd-more:disabled{color:rgba(255,255,255,.35);cursor:default}
+.bd-more:disabled span{text-decoration:none}
+.bd-more:disabled .ico{color:rgba(255,255,255,.35)}
+.bd-more:focus-visible{outline:2px solid #fff;outline-offset:-2px}
+.bd-zp{text-align:right;color:rgba(255,255,255,.72)}
+.bd-zq{width:116px;text-align:center;font-weight:700;font-size:15px}
+
+/* Total and button */
+.bd-total{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 14px;padding:14px 18px;border-radius:var(--r);background:#000;border:1px solid rgba(255,255,255,.12)}
+.bd-total div{display:grid;gap:2px}
+.bd-total span{font-size:13px;color:rgba(255,255,255,.62)}
+.bd-total b{font-weight:800;font-size:30px;line-height:1.05;letter-spacing:-.02em;color:#fff}
+.bd-total p{margin:0;font-size:13.5px;color:rgba(255,255,255,.72)}
+.bd-acts{display:grid;gap:4px;justify-items:center}
+.bd-acts .btn{width:100%}
+.bd .bd-next{width:100%}
+.bd-s .ico{flex:none}
+@media (max-width:480px){
+  .bd-h{grid-template-columns:44px minmax(0,1fr) auto;gap:10px;padding:10px}
+  .bd-h.poly{grid-template-columns:30px minmax(0,1fr) auto;padding:10px}
+  .bd-st button{width:38px;height:44px}
+  .bd-st input{width:42px}
+  .bd-st.big button{width:52px;height:52px}
+  .bd-st.big input{width:64px;height:52px;line-height:52px}
+  .bd-chips{flex-basis:100%}
+  .bd-chips button{height:48px}
+  .bd-zg{padding:10px 10px 4px}
+  .bd-z{grid-template-columns:minmax(0,1fr) 40px 98px;gap:6px;font-size:14px}
+  .bd-st.sm button{width:32px;height:36px}
+  .bd-st.sm output{width:32px;height:36px;line-height:36px;font-size:14px}
+  .bd-zq{width:98px}
+  .bd-zn{gap:6px}
+  .bd-zn select{padding:4px 2px;font-size:13px}
+  /* no room for the word and the remove button on a phone: the fold picker says enough */
+  .bd-z.has-x .bd-zw{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+}
+@media (prefers-reduced-motion:reduce){.bd-b{animation:none}.bd-s,.bd-h,.bd-st button{transition:none}}

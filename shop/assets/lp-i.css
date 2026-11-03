@@ -1,0 +1,65 @@
+/* Persona landing pages on version I (lp_i.py). Reuses h.css lp-* blocks; this file only adds what those pages need. */
+.lpi-page .lp-intro,.lpi-split,.lpi-risks2-sec,.lpi-table{padding:clamp(44px,6vw,76px) 0}
+.lpi-copy .lp-kicker{margin:0 0 12px;text-align:left;text-transform:uppercase}
+.lpi-copy .h2{margin:0 0 16px;font-size:clamp(36px,4.2vw,60px)}
+.lpi-copy > p:not([class]){margin:0 0 14px;font-size:17px;line-height:1.6;color:rgba(255,255,255,.74)}
+.lpi-copy > p b{color:#fff}
+.lpi-copy .lede{margin:0 0 16px}
+.lpi-copy .lp-em{margin:18px 0 14px;color:#fff}
+.lpi-copy .v2-cta{margin-top:22px;text-align:left}
+.lpi-page .lp-two > .lp-photo{align-self:start;position:sticky;top:96px}
+.lpi-poly-slab{display:grid;place-items:center;width:100%}
+.lpi-poly-slab img{width:min(100%,360px);height:auto;filter:drop-shadow(0 40px 50px rgba(0,0,0,.75))}
+.lpi-copy .lp-risks{margin:18px 0 6px}
+.lpi-flip > .lpi-copy{order:2}
+.lpi-trio.lp-trio{margin-top:0}
+.lpi-trio .gslab{width:min(200px,86%)}
+.lpi-ok .ico{background:rgba(60,207,122,.15);color:#3ccf7a}
+.lpi-ok b{display:block}
+.lpi-qs{list-style:none;margin:6px 0 18px;padding:0;display:grid;gap:10px}
+.lpi-qs li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:center;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#141212;font-weight:600;color:#fff;line-height:1.35}
+.lpi-qs li i{font-style:normal;font-family:var(--lab);font-weight:600;font-size:12px;letter-spacing:.1em;color:#FF6B6E}
+.lpi-quote{margin:0 0 18px;padding:0;font-family:var(--disp);font-weight:800;font-size:clamp(28px,3.4vw,46px);line-height:1.05;color:#fff;text-wrap:balance}
+.lpi-copy.lpi-honest-copy .h2{font-size:clamp(24px,2.6vw,34px)}
+.lpi-five-wrap{display:grid;gap:16px;justify-items:center}
+.lpi-five{list-style:none;margin:0;padding:0;display:flex;justify-content:center;align-items:flex-end;gap:2%;width:100%}
+.lpi-five li{width:18%;transition:transform .3s}
+.lpi-five li:nth-child(odd){transform:translateY(10px)}
+.lpi-five .gslab{width:100%}
+.lpi-five-cap{margin:0;font-family:var(--lab);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.lpi-fees .i-fv{position:relative;inset:auto;container-type:inline-size;padding:0;display:grid}
+.lpi-fees .i-fv-tier{padding:24px}
+.lpi-split-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin-top:clamp(28px,4vw,48px)}
+.lpi-split article{padding:clamp(22px,3vw,36px);border-radius:22px;border:1px solid rgba(255,255,255,.1);background:#100e0e;display:grid;gap:14px;align-content:start}
+.lpi-split article h3{margin:0;font-family:var(--disp);font-weight:800;font-size:clamp(22px,2.3vw,30px);line-height:1.1;color:#fff}
+.lpi-split article p{margin:0;font-size:16px;line-height:1.55;color:rgba(255,255,255,.74)}
+.lpi-split article .lp-kicker{margin:0}
+.lpi-split article .lp-risks{margin:4px 0}
+.lpi-split article .lp-trio{margin-top:6px}
+.lpi-split article .lp-trio .gslab{width:min(150px,86%)}
+.lpi-split article .v2-cta{margin:4px 0 0}
+.lpi-risks2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin-top:clamp(24px,3vw,40px)}
+.lpi-risks2 h3{margin:0 0 14px;font-family:var(--disp);font-weight:800;font-size:22px;color:#fff;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.lpi-risks2 h3 small{font-family:var(--lab);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.lpi-table .hc-tbl{margin-top:clamp(24px,3vw,40px)}
+.lpi-table .v2-cta{margin-top:28px;text-align:center}
+.lpi-page .lp-photo img{aspect-ratio:4/3.2}
+.lpi-trio p b{display:block}
+.lpi-trio p span{display:block;font-size:13px;color:rgba(255,255,255,.6)}
+.lpi-page .lp-photo.lpi-studio img{object-fit:contain;background:#f4f3f1;padding:12px}
+/* Landing page headlines are long (Joshua's copy, 7 to 12 words): three lines max on desktop (Bhaskar 2026-10-30) */
+@media (min-width:901px){.lpi-page .hc2-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.lpi-page #hero .h1{font-size:clamp(34px,3.2vw,46px)}
+.lpi-page #hero .h1 .red{display:inline}  /* the red phrase flows with the sentence instead of taking its own line */
+@media (max-width:860px){
+  .lpi-page #hero .h-sizes{display:none}
+  .lpi-copy .v2-cta{text-align:center}
+  .lpi-page .lp-two > .lp-photo{position:static}
+  .lpi-split-grid,.lpi-risks2{grid-template-columns:1fr}
+  .lpi-flip > .lpi-copy{order:0}
+  .lpi-five li{width:19%}
+  .lpi-trio.lp-trio{grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+  .lpi-trio .gslab,.lpi-split article .lp-trio .gslab{width:100%}
+  .lpi-trio p{font-size:12px}
+  .lpi-split article{padding:20px 16px}
+}

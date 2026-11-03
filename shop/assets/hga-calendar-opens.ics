@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//HGA//Presale//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:hga-calendar-opens-2027@hybridgrading.com
+DTSTAMP:20261104T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:HGA grading calendar opens
+DESCRIPTION:Book the grading date for your HGA presale cards.
+URL:https://hybridgrading.com/
+END:VEVENT
+END:VCALENDAR
